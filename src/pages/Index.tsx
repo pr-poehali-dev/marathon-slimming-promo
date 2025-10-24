@@ -89,7 +89,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <a
-        href="https://wa.me/79999999999?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20марафоне%20стройности"
+        href="https://wa.me/79281841258?text=Здравствуйте!%20Хочу%20узнать%20подробнее%20о%20марафоне%20стройности"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-2xl transition-all hover:scale-110 flex items-center justify-center group"
