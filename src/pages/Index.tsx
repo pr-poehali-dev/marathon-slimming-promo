@@ -167,7 +167,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="overflow-hidden animate-scale-in hover:shadow-xl transition-shadow">
               <img 
-                src="https://cdn.poehali.dev/projects/f9a65751-b098-4cae-9e80-4a46638a6c98/files/3e44c673-31f1-4ac7-87fa-3f1c5e9295af.jpg"
+                src="https://cdn.poehali.dev/projects/f9a65751-b098-4cae-9e80-4a46638a6c98/files/3051ff4c-a7ec-4260-854a-6be093f9ecc5.jpg"
                 alt="Трансформация"
                 className="w-full h-64 object-cover"
               />
