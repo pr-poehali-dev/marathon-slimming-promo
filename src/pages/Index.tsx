@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -15,6 +15,36 @@ const Index = () => {
     email: '',
     message: ''
   });
+
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const targetDate = new Date('2025-11-01T00:00:00').getTime();
+
+    const updateTimer = () => {
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((difference % (1000 * 60)) / 1000)
+        });
+      }
+    };
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -68,7 +98,36 @@ const Index = () => {
                   Узнать больше
                 </Button>
               </div>
-              <div className="mt-8 flex gap-8">
+              <div className="mt-8 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg">
+                <p className="text-center text-sm font-semibold text-muted-foreground mb-4">До старта марафона осталось:</p>
+                <div className="grid grid-cols-4 gap-4">
+                  <div className="text-center">
+                    <div className="bg-primary text-white rounded-xl p-4 mb-2">
+                      <p className="text-4xl font-bold font-heading">{timeLeft.days}</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground">дней</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-primary text-white rounded-xl p-4 mb-2">
+                      <p className="text-4xl font-bold font-heading">{timeLeft.hours}</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground">часов</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-primary text-white rounded-xl p-4 mb-2">
+                      <p className="text-4xl font-bold font-heading">{timeLeft.minutes}</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground">минут</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="bg-primary text-white rounded-xl p-4 mb-2">
+                      <p className="text-4xl font-bold font-heading">{timeLeft.seconds}</p>
+                    </div>
+                    <p className="text-sm text-muted-foreground">секунд</p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-6 flex gap-8">
                 <div>
                   <p className="text-3xl font-bold font-heading text-primary">1000+</p>
                   <p className="text-sm text-muted-foreground">Участников</p>
