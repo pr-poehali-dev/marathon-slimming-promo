@@ -130,11 +130,11 @@ const Index = () => {
               </div>
               <div className="mt-6 flex gap-8">
                 <div>
-                  <p className="text-3xl font-bold font-heading text-primary">1000+</p>
+                  <p className="text-3xl font-bold font-heading text-primary">100+</p>
                   <p className="text-sm text-muted-foreground">Участников</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-bold font-heading text-primary">-5-12 кг</p>
+                  <p className="text-3xl font-bold font-heading text-primary">-4-7 кг</p>
                   <p className="text-sm text-muted-foreground">Средний результат</p>
                 </div>
                 <div>
