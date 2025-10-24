@@ -278,11 +278,8 @@ const Index = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="overflow-hidden animate-scale-in hover:shadow-xl transition-shadow">
-              <div className="relative h-64 bg-gradient-to-br from-orange-100 to-yellow-50 flex items-center justify-center">
-                <Icon name="Coffee" size={80} className="text-primary/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground bg-white/90 px-4 py-2 rounded-lg">Твоё фото завтрака</p>
-                </div>
+              <div className="relative h-64 overflow-hidden">
+                <img src="https://cdn.poehali.dev/projects/f9a65751-b098-4cae-9e80-4a46638a6c98/files/dba8b03d-d41b-4eac-b8cd-df634307ccf1.jpg" alt="Здоровый завтрак" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
                 <CardTitle className="font-heading">Завтрак</CardTitle>
@@ -307,11 +304,8 @@ const Index = () => {
             </Card>
 
             <Card className="overflow-hidden animate-scale-in hover:shadow-xl transition-shadow" style={{ animationDelay: '0.1s' }}>
-              <div className="relative h-64 bg-gradient-to-br from-green-100 to-emerald-50 flex items-center justify-center">
-                <Icon name="Salad" size={80} className="text-primary/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground bg-white/90 px-4 py-2 rounded-lg">Твоё фото обеда</p>
-                </div>
+              <div className="relative h-64 overflow-hidden">
+                <img src="https://cdn.poehali.dev/projects/f9a65751-b098-4cae-9e80-4a46638a6c98/files/d98ee7a8-4ccb-4d81-a2f8-b3a2b3868e1d.jpg" alt="Полезный обед" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
                 <CardTitle className="font-heading">Обед</CardTitle>
@@ -336,11 +330,8 @@ const Index = () => {
             </Card>
 
             <Card className="overflow-hidden animate-scale-in hover:shadow-xl transition-shadow" style={{ animationDelay: '0.2s' }}>
-              <div className="relative h-64 bg-gradient-to-br from-pink-100 to-rose-50 flex items-center justify-center">
-                <Icon name="UtensilsCrossed" size={80} className="text-primary/20" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="text-sm text-muted-foreground bg-white/90 px-4 py-2 rounded-lg">Твоё фото ужина</p>
-                </div>
+              <div className="relative h-64 overflow-hidden">
+                <img src="https://cdn.poehali.dev/projects/f9a65751-b098-4cae-9e80-4a46638a6c98/files/1cd03e54-2170-42d6-9507-a41be7fdeabf.jpg" alt="Лёгкий ужин" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
                 <CardTitle className="font-heading">Ужин</CardTitle>
