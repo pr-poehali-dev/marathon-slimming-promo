@@ -69,6 +69,7 @@ const Index = () => {
               <button onClick={() => scrollToSection('home')} className="hover:text-primary transition-colors">Главная</button>
               <button onClick={() => scrollToSection('results')} className="hover:text-primary transition-colors">Результаты</button>
               <button onClick={() => scrollToSection('program')} className="hover:text-primary transition-colors">Программа</button>
+              <button onClick={() => scrollToSection('menu')} className="hover:text-primary transition-colors">Меню</button>
               <button onClick={() => scrollToSection('tariffs')} className="hover:text-primary transition-colors">Тарифы</button>
               <button onClick={() => scrollToSection('reviews')} className="hover:text-primary transition-colors">Отзывы</button>
               <button onClick={() => scrollToSection('contacts')} className="hover:text-primary transition-colors">Контакты</button>
@@ -260,6 +261,108 @@ const Index = () => {
                 Чат с единомышленниками и кураторами. Мотивация и ответы на вопросы 24/7.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold font-heading text-foreground mb-4">
+              Примерное меню
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Вкусные и полезные блюда на каждый день
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="overflow-hidden animate-scale-in hover:shadow-xl transition-shadow">
+              <div className="relative h-64 bg-gradient-to-br from-orange-100 to-yellow-50 flex items-center justify-center">
+                <Icon name="Coffee" size={80} className="text-primary/20" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground bg-white/90 px-4 py-2 rounded-lg">Твоё фото завтрака</p>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="font-heading">Завтрак</CardTitle>
+                <CardDescription>07:00 - 09:00</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-secondary mt-0.5" size={16} />
+                    <span>Овсяная каша с ягодами</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-secondary mt-0.5" size={16} />
+                    <span>Греческий йогурт</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-secondary mt-0.5" size={16} />
+                    <span>Зелёный чай</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden animate-scale-in hover:shadow-xl transition-shadow" style={{ animationDelay: '0.1s' }}>
+              <div className="relative h-64 bg-gradient-to-br from-green-100 to-emerald-50 flex items-center justify-center">
+                <Icon name="Salad" size={80} className="text-primary/20" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground bg-white/90 px-4 py-2 rounded-lg">Твоё фото обеда</p>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="font-heading">Обед</CardTitle>
+                <CardDescription>13:00 - 15:00</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-secondary mt-0.5" size={16} />
+                    <span>Куриная грудка на гриле</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-secondary mt-0.5" size={16} />
+                    <span>Киноа с овощами</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-secondary mt-0.5" size={16} />
+                    <span>Свежий салат</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden animate-scale-in hover:shadow-xl transition-shadow" style={{ animationDelay: '0.2s' }}>
+              <div className="relative h-64 bg-gradient-to-br from-pink-100 to-rose-50 flex items-center justify-center">
+                <Icon name="UtensilsCrossed" size={80} className="text-primary/20" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <p className="text-sm text-muted-foreground bg-white/90 px-4 py-2 rounded-lg">Твоё фото ужина</p>
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle className="font-heading">Ужин</CardTitle>
+                <CardDescription>18:00 - 20:00</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-secondary mt-0.5" size={16} />
+                    <span>Запечённая рыба</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-secondary mt-0.5" size={16} />
+                    <span>Овощи на пару</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Icon name="Check" className="text-secondary mt-0.5" size={16} />
+                    <span>Авокадо</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
