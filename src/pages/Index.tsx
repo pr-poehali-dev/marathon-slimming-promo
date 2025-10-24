@@ -596,11 +596,11 @@ const Index = () => {
                   <div className="flex items-center justify-center gap-8 text-muted-foreground">
                     <div className="flex items-center gap-2">
                       <Icon name="Phone" size={20} className="text-primary" />
-                      <span>+7 (999) 123-45-67</span>
+                      <span>+7 (928) 184-12-58</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Icon name="Mail" size={20} className="text-primary" />
-                      <span>info@marathon.ru</span>
+                      <Icon name="Instagram" size={20} className="text-primary" />
+                      <span>@nutriexpert_1</span>
                     </div>
                   </div>
                 </div>
