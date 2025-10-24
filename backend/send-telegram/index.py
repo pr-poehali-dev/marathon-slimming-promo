@@ -61,7 +61,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     
     # Format message
     telegram_message = f"""
-🔔 <b>Новая заявка с марафона!</b>
+🔔 <b>Новая заявка с марафона стройности!</b>
 
 👤 <b>Имя:</b> {name}
 📱 <b>Телефон:</b> {phone}
